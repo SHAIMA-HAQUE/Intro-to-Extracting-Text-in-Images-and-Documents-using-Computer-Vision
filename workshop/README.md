@@ -44,6 +44,8 @@ Have you ever wanted to scan handwritten documents and convert it to text? Your 
 
 ![image of completed project](images/) //to be done
 
+[Learn module area](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html)
+
 ## Milestone 1 (example)
 
 **Creating your first Cognitive Service Resource**
@@ -63,7 +65,6 @@ Have you ever wanted to scan handwritten documents and convert it to text? Your 
    **Pricing tier:** Standard S0
 
 ![image of the cognitive service resource](images/Cognitive_Service_Resource.png)
-[Learn module area](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html)
 
 3. Click on **Review+Create** and wait for its deployment.
 
@@ -100,33 +101,95 @@ Have you ever wanted to scan handwritten documents and convert it to text? Your 
 
 ## Milestone 3
 
-text
+**Using the OCR API and Read API using Vision Studio**
+Just to give them a sneak peek into the result of the code we are about to write
+1. Sign in through your azure account. Choose your resource and upload an image which has text on it or choose one from the options given.
 
-link
+![Vision Studio page](images/visual_studio.png)
 
 ## Milestone 4
 
-text
+**OCR Code**
+```
+def GetTextOcr(image_file):
+    print('Reading text in {}\n'.format(image_file))
+    with open(image_file, mode="rb") as image_data:
+        ocr_results = cv_client.recognize_printed_text_in_stream(image_data)
+    # Prepare image for drawing
+    fig = plt.figure(figsize=(7, 7))
+    img = Image.open(image_file)
+    draw = ImageDraw.Draw(img)
 
-link
+    # Process the text line by line
+    for region in ocr_results.regions:
+        for line in region.lines:
+
+            # Show the position of the line of text
+            l,t,w,h = list(map(int, line.bounding_box.split(',')))
+            draw.rectangle(((l,t), (l+w, t+h)), outline='magenta', width=5)
+
+            # Read the words in the line of text
+            line_text = ''
+            for word in line.words:
+                line_text += word.text + ' '
+            print(line_text.rstrip())
+
+    # Save the image with the text locations highlighted
+    plt.axis('off')
+    plt.imshow(img)
+    outputfile = 'ocr_results.jpg'
+    fig.savefig(outputfile)
+    print('Results saved in', outputfile)
+```
+We are using *matplotlib* and *pillow* to highlight the areas of text using magenta colored rectangles and displaying the output in the form of *ocr_results.jpg* and also displaying the text in the terminal.
+
 
 ## Milestone 5
 
-text
+**Read API Code**
 
-link
+```
+def GetTextRead(image_file):
+    print('Reading text in {}\n'.format(image_file))
+    with open(image_file, mode="rb") as image_data:
+        read_op = cv_client.read_in_stream(image_data, raw=True)
+
+    # Get the async operation ID so we can check for the results
+    operation_location = read_op.headers["Operation-Location"]
+    operation_id = operation_location.split("/")[-1]
+
+    # Wait for the asynchronous operation to complete
+    while True:
+        read_results = cv_client.get_read_result(operation_id)
+        if read_results.status not in [OperationStatusCodes.running, OperationStatusCodes.not_started]:
+            break
+        time.sleep(1)
+
+    # If the operation was successfuly, process the text line by line
+    if read_results.status == OperationStatusCodes.succeeded:
+        for page in read_results.analyze_result.read_results:
+            for line in page.lines:
+                print(line.text)
+
+```
+The Read API uses an asynchronous operation model, in which a request to start text recognition is submitted; and the operation ID returned from the request can subsequently be used to check progress and retrieve results.
+
+Running code in terminal: https://www.youtube.com/watch?v=0uQhHrlKe7c&t=4s
 
 ## Quiz or Code Challenge
 
-Link to quiz or challenge on Learn
+[Knowledge Check](https://docs.microsoft.com/en-us/learn/modules/read-text-images-documents-with-computer-vision-service/6-knowledge-check)
 
 ## Next steps
 
-*links to Microsoft Learn to further learning progress, and/or a path to certifications*
+Microsoft Learning Path: Learn more about
 
-## Practice
+[Custom Vision](https://docs.microsoft.com/en-us/learn/paths/explore-computer-vision-microsoft-azure/),
 
-*suggest, or add as an addendum, a way to extend students knowledge of the topic by creating a new app or demo that builds on the original workshop materials.*
+[Introduction to Computer Vision using Tensorflow](https://docs.microsoft.com/en-us/learn/modules/intro-computer-vision-tensorflow/)
+
+[Introduction to Computer Vision using PyTorch](https://docs.microsoft.com/en-us/learn/modules/intro-computer-vision-pytorch/?ns-enrollment-type=learningpath&ns-enrollment-id=learn.pytorch.pytorch-fundamentals)
+
 
 ## Feedback
 
