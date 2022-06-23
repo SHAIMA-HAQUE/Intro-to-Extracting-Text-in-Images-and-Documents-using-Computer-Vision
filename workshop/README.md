@@ -41,8 +41,8 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 ## What students will learn
 
 Have you ever wanted to scan handwritten documents and convert it to text? Your college notes maybe? In this workshop you will learn to do just that. We will extract text from images and documents using OCR and Read API. 
-
-![image of completed project](images/) //to be done
+Running code in terminal: https://www.youtube.com/watch?v=0uQhHrlKe7c&t=4s
+![image of completed project]() //to be done
 
 [Learn module area](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html)
 
@@ -174,7 +174,7 @@ def GetTextRead(image_file):
 ```
 The Read API uses an asynchronous operation model, in which a request to start text recognition is submitted; and the operation ID returned from the request can subsequently be used to check progress and retrieve results.
 
-Running code in terminal: https://www.youtube.com/watch?v=0uQhHrlKe7c&t=4s
+
 
 ## Quiz or Code Challenge
 
