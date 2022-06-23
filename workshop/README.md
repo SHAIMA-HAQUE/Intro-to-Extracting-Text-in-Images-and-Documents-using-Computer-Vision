@@ -42,8 +42,7 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 
 Have you ever wanted to scan handwritten documents and convert it to text? Your college notes maybe? In this workshop you will learn to do just that. We will extract text from images and documents using OCR and Read API. 
 Running code in terminal: https://www.youtube.com/watch?v=0uQhHrlKe7c&t=4s
-![image of completed project]() //to be done
-
+![image of result](images/ocr_results.jpg) 
 [Learn module area](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html)
 
 ## Milestone 1 (example)
