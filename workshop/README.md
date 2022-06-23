@@ -185,7 +185,7 @@ The Read API uses an asynchronous operation model, in which a request to start t
 
 Microsoft Learning Path: Learn more about
 
-[Custom Vision](https://docs.microsoft.com/en-us/learn/paths/explore-computer-vision-microsoft-azure/),
+[Custom Vision](https://docs.microsoft.com/en-us/learn/paths/explore-computer-vision-microsoft-azure/)
 
 [Introduction to Computer Vision using Tensorflow](https://docs.microsoft.com/en-us/learn/modules/intro-computer-vision-tensorflow/)
 
