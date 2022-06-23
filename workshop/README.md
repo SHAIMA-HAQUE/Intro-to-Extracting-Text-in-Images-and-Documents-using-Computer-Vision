@@ -48,7 +48,7 @@ Have you ever wanted to scan handwritten documents and convert it to text? Your 
 
 Creating your first Cognitive Service Resource
 
-![image of the cognitive service resource]()
+![image of the cognitive service resource](images/Cognitive Service Resource.png)
 [link to Learn module area](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html)
 
 ## Milestone 2
