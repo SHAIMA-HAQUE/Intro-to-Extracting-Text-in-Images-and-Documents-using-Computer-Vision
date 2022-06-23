@@ -42,14 +42,34 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 
 Have you ever wanted to scan handwritten documents and convert it to text? Your college notes maybe? In this workshop you will learn to do just that. We will extract text from images and documents using OCR and Read API. 
 
-![image of completed project](images/placeholder.png) //to be done
+![image of completed project](images/) //to be done
 
 ## Milestone 1 (example)
 
-Creating your first Cognitive Service Resource
+**Creating your first Cognitive Service Resource**
 
-![image of the cognitive service resource](images/Cognitive Service Resource.png)
-[link to Learn module area](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html)
+1. Open the [Azure portal](https://portal.azure.com), sign in using your Microsoft account which is associated with Azure subscription.
+
+2. Select the **+Create Resource button**, search for Cognitive Services and create a Cognitive Services Resource.
+
+   **Subscription:** Your Azure subscription
+
+   **Resource group:** Choose or create a resource group (if you are using a restricted subscription, you may not have permission to create a new resource group -      use the one provided)
+
+   **Region:** Choose any available region
+
+   **Name:** Enter a unique name
+
+   **Pricing tier:** Standard S0
+
+![image of the cognitive service resource](images/Cognitive_Service_Resource.png)
+[Learn module area](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html)
+
+3. Click on **Review+Create** and wait for its deployment.
+
+4. When the resource has been deployed, go to it and view its Keys and Endpoint page. You will need the endpoint and one of the keys from this page in the next procedure.
+
+![image of keys and endpoints page](images/CognitiveService-Spec.png)
 
 ## Milestone 2
 
