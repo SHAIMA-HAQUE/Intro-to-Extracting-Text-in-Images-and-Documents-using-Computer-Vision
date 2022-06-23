@@ -6,7 +6,7 @@ https://docs.microsoft.com/en-us/learn/modules/read-text-images-documents-with-c
 
 ## Goals
 
-In this workshop, we will discuss *insert your topic*.
+In this workshop, we will discuss *Extract Text in Images and Documents using Computer Vision*.
 
 | **Goal**              | *describe the goal of the workshop*                                    |
 | ----------------------------- | --------------------------------------------------------------------- |
