@@ -17,9 +17,10 @@ In this workshop, we will discuss *Extract Text in Images and Documents using Co
 | **Just want to try the app or see the solution?** | [Solution](https://github.com/SHAIMA-HAQUE/Intro-to-Extracting-Text-in-Images-and-Documents-using-Computer-Vision/tree/main/workshop/solution/Read_Text_from_Images_complete/ocr)                         |
 | **Slides** | [Powerpoint](slides.pptx) 
                          
-## Video
+## Train the Trainer Video
 
-Embed your Train the Trainer video here. Instructions on how to create a great video experience is [available on this page](../video-guidance.md).
+[![workshop walk-through](./images/promo.png)](https://www.youtube.com/watch?v=hkj3-mQ3ag0)
+> 🎥 Click this image to watch Christopher walk you through the workshop
 
 ## Pre-Learning
 
