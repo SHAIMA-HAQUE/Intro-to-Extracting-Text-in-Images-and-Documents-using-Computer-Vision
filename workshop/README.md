@@ -1,8 +1,8 @@
-# Full Workshop Title
+# Intro to Extracting Text in Images and Documents using Computer Vision
 
 ## Module Source Link
 
-Link the source Learn module here
+https://docs.microsoft.com/en-us/learn/modules/read-text-images-documents-with-computer-vision-service/
 
 ## Goals
 
@@ -10,11 +10,11 @@ In this workshop, we will discuss *insert your topic*.
 
 | **Goal**              | *describe the goal of the workshop*                                    |
 | ----------------------------- | --------------------------------------------------------------------- |
-| **What will you learn**       | *describe your learning goals*                                        |
-| **What you'll need**          | *link all the necessary tooling, subscriptions, and downloads needed* |
-| **Duration**                  | *specify the duration*                                                                |
-| **Microsoft Cloud Topics taught**                  | *M365, Azure, GitHub, other?*                                                                |
-| **Just want to try the app or see the solution?** | *an optional link to the completed project sample app or solution folder*                          |
+| **What will you learn**       | How to Extract in Images and Documents using OCR and Read API                                        |
+| **What you'll need**          | Custom Vision(https://www.customvision.ai/) 
+| **Duration**                  | 60-90 minutes                                                              |
+| **Microsoft Cloud Topics taught**                  | Azure, Custom Vision, Visual Studio Code                                                                |
+| **Just want to try the app or see the solution?** | [Solution](https://github.com/SHAIMA-HAQUE/Intro-to-Extracting-Text-in-Images-and-Documents-using-Computer-Vision/tree/main/workshop/solution/Read_Text_from_Images_complete/ocr)                         |
 | **Slides** | [Powerpoint](slides.pptx) 
                          
 ## Video
@@ -23,27 +23,33 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 
 ## Pre-Learning
 
-*add a link to Microsoft Learn for students to pre-learn the topic, if possible*
+- Basic Knowledge of [Python](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/)
+
+- Basic Knowledge of [APIs](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/)
+
+
 
 ## Prerequisites
 
-*any installations that will be helpful, any hardware or software needed*
+- An [Azure Account](https://azure-for-academics.github.io/getting-azure/). You may get free credits from [Azure for Students](https://azure.microsoft.com/free/students/), or [Azure Free Trial](https://azure.microsoft.com/free/).
+
+- Python 3.6 or later installed.
+
+- Visual Studio Code.
+
 
 ## What students will learn
 
-*In this area, describe the scenario and intended solution, paraphrasing what is in the module or creating a brief description here*
+Have you ever wanted to scan handwritten documents and convert it to text? Your college notes maybe? In this workshop you will learn to do just that. We will extract text from images and documents using OCR and Read API. 
 
-Example: Have you ever wanted to visit a museum virtually or explore its collections right from your home computer? In this workshop, use an API, or Application Programming Interface, to learn more about a museum collection.
-
-*add a screenshot of the completed project*
-
-![image of completed project](images/placeholder.png)
+![image of completed project](images/placeholder.png) //to be done
 
 ## Milestone 1 (example)
 
-In this segment, you'll query an API at the Metropolitan Museum of Art
+Creating your first Cognitive Service Resource
 
-[link to Learn module area](link)
+![image of the cognitive service resource]()
+[link to Learn module area](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/20-ocr.html)
 
 ## Milestone 2
 
