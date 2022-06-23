@@ -73,9 +73,30 @@ Have you ever wanted to scan handwritten documents and convert it to text? Your 
 
 ## Milestone 2
 
-text
+**Prepare to use Computer Vision SDK**
 
-link
+1. Clone the repository: https://github.com/SHAIMA-HAQUE/Intro-to-Extracting-Text-in-Images-and-Documents-using-Computer-Vision
+   (The code in this repo is taken from https://github.com/MicrosoftLearning/AI-102-AIEngineer)
+2. Navigate to **workshop/Read_Text_from_Images_initial/ocr/read-text**
+3. We need to install the Computer Vision SDK package by running the command:
+   ```
+   pip install azure-cognitiveservices-vision-computervision==0.7.0
+   ```
+4. Open **read-text.py** file in your text editor.
+5. Add the lines below to import the namespaces you will need to use the Computer Vision SDK.
+   ```
+   from azure.cognitiveservices.vision.computervision import ComputerVisionClient ​
+
+   from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes ​
+
+   from msrest.authentication import CognitiveServicesCredentials
+   ```
+6. In the code file for your client application, in the Main function, note that the code to load the configuration settings has been provided. Then find the      comment Authenticate Computer Vision client. Then, under this comment, add the following language-specific code to create and authenticate a Computer Vision client object:
+   ```
+   credential = CognitiveServicesCredentials(cog_key) 
+
+   cv_client = ComputerVisionClient(cog_endpoint, credential)
+   ```
 
 ## Milestone 3
 
