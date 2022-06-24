@@ -15,7 +15,7 @@ In this workshop, we will discuss *Extract Text in Images and Documents using Co
 | **Duration**                  | 60-90 minutes                                                              |
 | **Microsoft Cloud Topics taught**                  | Azure, Custom Vision, Visual Studio Code                                                                |
 | **Just want to try the app or see the solution?** | [Solution](https://github.com/SHAIMA-HAQUE/Intro-to-Extracting-Text-in-Images-and-Documents-using-Computer-Vision/tree/main/workshop/solution/Read_Text_from_Images_complete/ocr)                         |
-| **Slides** | [Powerpoint](slides.pptx) 
+| **Slides** | [Powerpoint](slides_final.pptx) 
                          
 ## Train the Trainer Video
 
