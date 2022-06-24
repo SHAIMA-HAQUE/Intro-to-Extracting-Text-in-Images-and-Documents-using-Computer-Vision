@@ -20,7 +20,7 @@ In this workshop, we will discuss *Extract Text in Images and Documents using Co
 ## Train the Trainer Video
 
 [![workshop walk-through](./images/promo.png)](https://www.youtube.com/watch?v=hkj3-mQ3ag0)
-> 🎥 Click this image to watch Christopher walk you through the workshop
+> 🎥 Click this image to watch us walk you through the workshop
 
 ## Pre-Learning
 
